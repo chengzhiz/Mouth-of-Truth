@@ -44,7 +44,7 @@ def main():
             if user_interaction_detected():
                 #clear the terminal all the past text, all clean
                 terminal_ui.clear_text()
-                terminal_ui.append_text("User interaction detected. System ready.\n")
+                terminal_ui.append_text("Listening user speaking....\n") # changed from "system ready to listening, for clearer users' instruction"
                 control_led("on")  # Turn on LED light when user interaction is detected.
                 stop_playback()  # Stop any ongoing playback
                 user_input = recognize_speech_from_mic()
